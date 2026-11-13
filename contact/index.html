@@ -1,0 +1,631 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Contact | Peijie Liu - Electrical Engineering Portfolio</title><meta name="author" content="Peijie Liu"><meta name="copyright" content="Peijie Liu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#1a1814"><meta name="description" content="I&#39;m always excited to discuss new projects, collaboration opportunities, or just chat about engineering and technology.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact">
+<meta property="og:url" content="https://peijie.dev/contact/index.html">
+<meta property="og:site_name" content="Peijie Liu - Electrical Engineering Portfolio">
+<meta property="og:description" content="I&#39;m always excited to discuss new projects, collaboration opportunities, or just chat about engineering and technology.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://peijie.dev/images/peijieliu.jpg">
+<meta property="article:published_time" content="2025-01-01T05:00:00.000Z">
+<meta property="article:modified_time" content="2026-11-13T07:38:25.805Z">
+<meta property="article:author" content="Peijie Liu">
+<meta property="article:tag" content="electrical engineering, Georgia Tech, analog circuits, FPGA, robotics, PCB design, audiophile, DIY projects">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://peijie.dev/images/peijieliu.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/images/icon.jpg"><link rel="canonical" href="https://peijie.dev/contact/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.7.2"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.15/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        try {
+          const data = { value }
+
+          if (ttl != null) {
+            data.expiry = Date.now() + ttl * 86400000
+          }
+
+          localStorage.setItem(key, JSON.stringify(data))
+        } catch (e) {
+          console.error(e)
+        }
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return
+
+        try {
+          const data = JSON.parse(itemStr)
+
+          if (data.expiry && Date.now() > data.expiry) {
+            localStorage.removeItem(key)
+            return
+          }
+
+          return data.value
+        } catch {
+          localStorage.removeItem(key)
+        }
+      }
+    }
+
+    const scriptCache = new Map()
+    const cssCache = new Map()
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => {
+        if (scriptCache.has(url)) {
+          return scriptCache.get(url)
+        }
+
+        const promise = new Promise((resolve, reject) => {
+          const script = document.createElement('script')
+
+          script.src = url
+          script.async = true
+
+          for (const key in attr) {
+            script.setAttribute(key, attr[key])
+          }
+
+          script.onload = resolve
+          script.onerror = reject
+
+          document.head.appendChild(script)
+        })
+
+        scriptCache.set(url, promise)
+
+        return promise
+      },
+      getCSS: (url, id) => {
+        if (cssCache.has(url)) {
+          return cssCache.get(url)
+        }
+
+        const promise = new Promise((resolve, reject) => {
+          const link = document.createElement('link')
+
+          link.rel = 'stylesheet'
+          link.href = url
+
+          if (id) {
+            link.id = id
+          }
+
+          link.onload = resolve
+          link.onerror = reject
+
+          document.head.appendChild(link)
+        })
+
+        cssCache.set(url, promise)
+
+        return promise
+      },
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const metaThemeColor = document.querySelector('meta[name="theme-color"]')
+      const activateDarkMode = () => {
+        document.documentElement.dataset.theme = 'dark'
+        if (metaThemeColor !== null) {
+          metaThemeColor.setAttribute('content', '#1a1814')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.dataset.theme = 'light'
+        if (metaThemeColor !== null) {
+          metaThemeColor.setAttribute('content', '#f2f1ed')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":3,"unescape":true,"pagination":{"enable":true,"hitsPerPage":8},"languages":{"hits_empty":"No results found for: ${query}","hits_stats":"${hits} articles found"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":400,"highlightFullpage":true,"highlightMacStyle":true},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"limitCount":100,"languages":{"author":"Author: Peijie Liu","link":"Link: ","source":"Source: Peijie Liu - Electrical Engineering Portfolio","info":"Copyright belongs to the author. For commercial use, please contact the author for authorization. For non-commercial use, please indicate the source."}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"You have switched to Traditional Chinese","cht_to_chs":"You have switched to Simplified Chinese","day_to_night":"You have switched to Dark Mode","night_to_day":"You have switched to Light Mode","bgLight":"#f54e00","bgDark":"#3d2a1a","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: true,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Contact',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><link rel="stylesheet" href="/css/custom-butterfly.css"><link rel="stylesheet" href="/css/additions.css"><link rel="stylesheet" href="/css/signal.css"><meta name="generator" content="Hexo 8.1.2"><link rel="alternate" href="/atom.xml" title="Peijie Liu - Electrical Engineering Portfolio" type="application/atom+xml">
+</head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+btf.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
+
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/themes/blue/pace-theme-flash.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js@1.3.1/pace.min.js"></script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/peijieliu.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">15</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">41</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user-astronaut"></i><span> About</span></a></div><div class="menus_item"><a class="site-page" href="/resume/"><i class="fa-fw fas fa-file-alt"></i><span> Resume</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-rocket"></i><span> Portfolio</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/Technical-Projects/"><i class="fa-fw fas fa-microchip"></i><span> Technical Projects</span></a></li><li><a class="site-page child" href="/categories/Tech-Notes/"><i class="fa-fw fas fa-flask"></i><span> Tech Notes</span></a></li><li><a class="site-page child" href="/categories/Stories-Writing/"><i class="fa-fw fas fa-pen-fancy"></i><span> Stories &amp; Writing</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/skills/"><i class="fa-fw fas fa-cogs"></i><span> Skills</span></a></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fas fa-envelope"></i><span> Contact</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div></div></div></div><div class="page type-contact" id="body-wrap"><header class="not-home-page fixed" id="page-header" style="background-image: url(/images/background.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name"><span class="brand-name">Peijie Liu</span><span class="brand-tag">Electrical Engineering Portfolio</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user-astronaut"></i><span> About</span></a></div><div class="menus_item"><a class="site-page" href="/resume/"><i class="fa-fw fas fa-file-alt"></i><span> Resume</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-rocket"></i><span> Portfolio</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/Technical-Projects/"><i class="fa-fw fas fa-microchip"></i><span> Technical Projects</span></a></li><li><a class="site-page child" href="/categories/Tech-Notes/"><i class="fa-fw fas fa-flask"></i><span> Tech Notes</span></a></li><li><a class="site-page child" href="/categories/Stories-Writing/"><i class="fa-fw fas fa-pen-fancy"></i><span> Stories &amp; Writing</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/skills/"><i class="fa-fw fas fa-cogs"></i><span> Skills</span></a></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fas fa-envelope"></i><span> Contact</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><div class="inst-bar np-kicker"><span class="inst-led" aria-hidden="true"></span><span class="np-path">peijie.dev <i aria-hidden="true">/</i> contact</span></div><h1 id="site-title">Contact</h1></div></header><main class="layout hide-aside" id="content-inner"><div id="page"><div class="container" id="article-container"><!-- The whole page is drawn from source/_data/contact.yml (edit the text there).
+     scripts/site-signal.js replaces the marker below when the site is built. -->
+<div class="pl ct" data-ct data-tz="America&#x2F;New_York" data-place="Atlanta"><header class="ct-top"><div class="ct-hello"><p class="eyebrow">Contact · Open channel</p><h2 class="ct-title">Let&#39;s Connect!</h2><p class="ct-intro">I'm always excited to discuss new projects, collaboration opportunities, or just chat about engineering and technology. Feel free to reach out through any of the channels below!</p></div><section class="ct-panel ct-link" aria-labelledby="ct-h-link"><div class="inst-bar"><span class="inst-led" aria-hidden="true"></span><h2 class="ct-bar-t" id="ct-h-link">Direct lines</h2><span class="inst-status ct-state" data-ct-state hidden></span></div><p class="ct-next" data-ct-next>Monday ~ Friday: 6:00 PM - 10:00 PM EST · Wednesday, also: 10:00 AM - 3:00 PM EST · Friday, also: 10:00 AM - 12:00 PM EST · Sunday: 12:00 PM - 6:00 PM EST</p><h3 class="ct-h ct-sr">Email</h3><ul class="ct-list"><li class="ct-line" data-line="academic" data-address="pliu369@gatech.edu" style="--inst:#6f9bd6"><span class="ct-ic" aria-hidden="true"><i class="fas fa-graduation-cap"></i></span><span class="ct-line-main"><span class="ct-line-k">Academic<em class="ct-pick" hidden>Suggested</em></span><a class="ct-line-v" href="mailto:pliu369@gatech.edu">pliu369<wbr>@gatech.edu</a><span class="ct-line-note">For academic inquiries, research collaborations, and Georgia Tech related matters</span></span><button type="button" class="ct-copy" data-copy="pliu369@gatech.edu" data-copy-name="Academic email" aria-label="Copy pliu369@gatech.edu"><i class="far fa-copy" aria-hidden="true"></i><span class="ct-copy-t">Copy</span></button></li><li class="ct-line" data-line="personal" data-address="liupeijie0716@outlook.com" style="--inst:#a585cf"><span class="ct-ic" aria-hidden="true"><i class="fas fa-bolt"></i></span><span class="ct-line-main"><span class="ct-line-k">Personal<em class="ct-pick" hidden>Suggested</em></span><a class="ct-line-v" href="mailto:liupeijie0716@outlook.com">liupeijie0716<wbr>@outlook.com</a><span class="ct-line-note">For anything to geek out with</span></span><button type="button" class="ct-copy" data-copy="liupeijie0716@outlook.com" data-copy-name="Personal email" aria-label="Copy liupeijie0716@outlook.com"><i class="far fa-copy" aria-hidden="true"></i><span class="ct-copy-t">Copy</span></button></li></ul></section></header><div class="ct-main"><section class="ct-panel ct-tx" id="ct-compose" aria-labelledby="ct-h-tx"><div class="inst-bar"><span class="inst-led" aria-hidden="true"></span><h2 class="ct-bar-t" id="ct-h-tx">Quick Message</h2><span class="ct-tag" data-ct-tag aria-hidden="true"></span><span class="ct-meter" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div><form class="ct-form" action="https:&#x2F;&#x2F;formspree.io&#x2F;f&#x2F;xblqlovr" method="POST"><fieldset class="ct-topics"><legend class="ct-label">Subject</legend><div class="ct-topic-row"><label class="ct-topic"><input type="radio" name="subject" value="collaboration" required data-label="Project Collaboration" data-email="personal" data-prompt="What are you building, and where could I help?"><span class="ct-topic-in"><i class="fas fa-diagram-project" aria-hidden="true"></i><span>Project Collaboration</span></span></label><label class="ct-topic"><input type="radio" name="subject" value="internship" required data-label="Internship Opportunity" data-email="academic" data-prompt="The team, the role and the dates, and what the work involves."><span class="ct-topic-in"><i class="fas fa-briefcase" aria-hidden="true"></i><span>Internship Opportunity</span></span></label><label class="ct-topic"><input type="radio" name="subject" value="research" required data-label="Research Discussion" data-email="academic" data-prompt="The question you are working on, and how I could contribute."><span class="ct-topic-in"><i class="fas fa-flask" aria-hidden="true"></i><span>Research Discussion</span></span></label><label class="ct-topic"><input type="radio" name="subject" value="technical" required data-label="Technical Question" data-email="personal" data-prompt="What you are trying to do, what you tried, and what happened."><span class="ct-topic-in"><i class="fas fa-microchip" aria-hidden="true"></i><span>Technical Question</span></span></label><label class="ct-topic"><input type="radio" name="subject" value="other" required data-label="Other" data-email="personal" data-prompt="Anything at all."><span class="ct-topic-in"><i class="fas fa-comment-dots" aria-hidden="true"></i><span>Other</span></span></label></div><small class="ct-err" id="ct-e-subject" hidden></small></fieldset><div class="ct-row"><label class="ct-field"><span class="ct-label">Name</span><input type="text" name="name" autocomplete="name" required><small class="ct-err" id="ct-e-name" hidden></small></label><label class="ct-field"><span class="ct-label">Email</span><input type="email" name="email" autocomplete="email" inputmode="email" required><small class="ct-err" id="ct-e-email" hidden></small></label></div><label class="ct-field"><span class="ct-label">Message <span class="ct-count" data-ct-count aria-hidden="true"></span></span><textarea name="message" rows="6" aria-label="Message" required></textarea><small class="ct-err" id="ct-e-message" hidden></small></label><input type="hidden" name="_subject" value=""><input class="ct-hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true"><div class="ct-tx-row"><div class="ct-scope" aria-hidden="true"><canvas class="ct-cv"></canvas></div><button type="submit" class="pl-btn pl-btn--solid ct-go"><b class="ct-go-t">Send Message</b> <span aria-hidden="true">&rarr;</span></button></div><div class="ct-send"><p class="ct-status" data-ct-status role="status" aria-live="polite"></p><a class="ct-mailto" data-ct-mailto href="mailto:pliu369@gatech.edu">or write it in your mail app</a></div></form><div class="ct-done" data-ct-done hidden><div class="ct-done-top"><span class="ct-done-ic" aria-hidden="true"><i class="fas fa-check"></i></span><div><h3 class="ct-done-h" tabindex="-1">Message sent.</h3><p class="ct-done-p" data-ct-done-text></p></div></div><dl class="ct-lcd ct-receipt"><div><dt>Subject</dt><dd data-ct-r-subject></dd></div><div><dt>Sent</dt><dd data-ct-r-time></dd></div><div><dt>Replies go to</dt><dd data-ct-r-mail></dd></div></dl><p class="ct-done-p" data-ct-r-next></p><button type="button" class="pl-btn" data-ct-again>Write another</button></div></section><div class="ct-side"><section class="ct-panel ct-nets" aria-labelledby="ct-h-net"><div class="inst-bar"><span class="inst-led" aria-hidden="true"></span><h2 class="ct-bar-t" id="ct-h-net">Professional Networks</h2></div><p class="ct-sub">While I maintain a professional presence online, here&#39;s where you can find my latest updates:</p><ul class="ct-list"><li><a class="ct-line ct-net" href="https:&#x2F;&#x2F;linkedin.com&#x2F;in&#x2F;peijie-liu-gatech" target="_blank" rel="noopener" style="--inst:#4d9de0"><span class="ct-ic" aria-hidden="true"><i class="fab fa-linkedin"></i></span><span class="ct-line-main"><span class="ct-line-k">LinkedIn</span><span class="ct-line-note">Professional Updates</span></span><span class="ct-sr"> (opens in a new tab)</span><i class="fas fa-arrow-right ct-ext" aria-hidden="true"></i></a></li><li><a class="ct-line ct-net" href="https:&#x2F;&#x2F;github.com&#x2F;FrostFlops" target="_blank" rel="noopener" style="--inst:#9a968c"><span class="ct-ic" aria-hidden="true"><i class="fab fa-github"></i></span><span class="ct-line-main"><span class="ct-line-k">GitHub</span><span class="ct-line-note">Open Source</span></span><span class="ct-sr"> (opens in a new tab)</span><i class="fas fa-arrow-right ct-ext" aria-hidden="true"></i></a></li><li><a class="ct-line ct-net" href="https:&#x2F;&#x2F;space.bilibili.com&#x2F;490557212" target="_blank" rel="noopener" style="--inst:#fb7299"><span class="ct-ic" aria-hidden="true"><i class="fab fa-bilibili"></i></span><span class="ct-line-main"><span class="ct-line-k">Bilibili</span><span class="ct-line-note">Technical Content - DIY projects and reviews</span></span><span class="ct-sr"> (opens in a new tab)</span><i class="fas fa-arrow-right ct-ext" aria-hidden="true"></i></a></li><li><a class="ct-line ct-net" href="https:&#x2F;&#x2F;www.youtube.com&#x2F;@FrostFlops" target="_blank" rel="noopener" style="--inst:#ff5b4f"><span class="ct-ic" aria-hidden="true"><i class="fab fa-youtube"></i></span><span class="ct-line-main"><span class="ct-line-k">YouTube</span><span class="ct-line-note">@FrostFlops</span></span><span class="ct-sr"> (opens in a new tab)</span><i class="fas fa-arrow-right ct-ext" aria-hidden="true"></i></a></li></ul></section><section class="ct-panel ct-loc" aria-labelledby="ct-h-loc"><div class="inst-bar"><span class="inst-led" aria-hidden="true"></span><h2 class="ct-bar-t" id="ct-h-loc">Location</h2></div><p class="ct-loc-l"><strong>Current Location</strong>: Atlanta, Georgia, USA</p><p class="ct-loc-l"><strong>Georgia Institute of Technology</strong></p><p class="ct-loc-l">School of Electrical and Computer Engineering</p><div class="ct-mail"><p class="ct-loc-l"><strong>Mailing Address</strong>:<br>334114 Georgia Tech Station<br>Atlanta, GA 30332-1400</p><button type="button" class="ct-copy" data-copy="334114 Georgia Tech Station&#10;Atlanta, GA 30332-1400" data-copy-name="mailing address" aria-label="Copy the mailing address"><i class="far fa-copy" aria-hidden="true"></i><span class="ct-copy-t">Copy</span></button></div></section></div></div><section class="ct-panel ct-avail" aria-labelledby="ct-h-av" data-ct-week data-slots="[{&quot;i&quot;:0,&quot;d&quot;:[1,2,3,4,5],&quot;a&quot;:1080,&quot;b&quot;:1320},{&quot;i&quot;:1,&quot;d&quot;:[3],&quot;a&quot;:600,&quot;b&quot;:900},{&quot;i&quot;:2,&quot;d&quot;:[5],&quot;a&quot;:600,&quot;b&quot;:720},{&quot;i&quot;:3,&quot;d&quot;:[7],&quot;a&quot;:720,&quot;b&quot;:1080}]"><div class="inst-bar"><span class="inst-led" aria-hidden="true"></span><h2 class="ct-bar-t" id="ct-h-av">Availability</h2><span class="ct-tzsw" role="group" aria-label="Show the hours in" hidden><button type="button" data-tz="there" aria-pressed="true">Atlanta time</button><button type="button" data-tz="here" aria-pressed="false">Your time</button></span></div><div class="ct-avail-body"><dl class="ct-lcd ct-clocks"><div><dt>Atlanta</dt><dd data-ct-there>--:--</dd></div><div data-ct-here-cell><dt>You</dt><dd data-ct-here>--:--</dd></div><div data-ct-count-cell hidden><dt data-ct-count-k></dt><dd data-ct-count-v></dd></div></dl><div class="ct-week" aria-hidden="true"><div class="ct-week-rows"><div class="ct-day"><span class="ct-day-k">Mon</span><span class="ct-day-track" data-day="0"><i class="ct-slot" style="left:75.00%;width:16.67%"></i></span></div><div class="ct-day"><span class="ct-day-k">Tue</span><span class="ct-day-track" data-day="1"><i class="ct-slot" style="left:75.00%;width:16.67%"></i></span></div><div class="ct-day"><span class="ct-day-k">Wed</span><span class="ct-day-track" data-day="2"><i class="ct-slot" style="left:75.00%;width:16.67%"></i><i class="ct-slot" style="left:41.67%;width:20.83%"></i></span></div><div class="ct-day"><span class="ct-day-k">Thu</span><span class="ct-day-track" data-day="3"><i class="ct-slot" style="left:75.00%;width:16.67%"></i></span></div><div class="ct-day"><span class="ct-day-k">Fri</span><span class="ct-day-track" data-day="4"><i class="ct-slot" style="left:75.00%;width:16.67%"></i><i class="ct-slot" style="left:41.67%;width:8.33%"></i></span></div><div class="ct-day"><span class="ct-day-k">Sat</span><span class="ct-day-track" data-day="5"></span></div><div class="ct-day"><span class="ct-day-k">Sun</span><span class="ct-day-track" data-day="6"><i class="ct-slot" style="left:50.00%;width:25.00%"></i></span></div></div><div class="ct-axis"><span style="left:0%">12 AM</span><span style="left:25%">6 AM</span><span style="left:50%">12 PM</span><span style="left:75%">6 PM</span><span style="left:100%">12 AM</span></div><p class="ct-legend"><i class="ct-slot"></i>Office hours<span class="ct-now-leg"><i class="ct-now-key"></i>Now</span></p></div><div class="ct-hours"><h3 class="ct-h">Office Hours (Academic Year)</h3><ul class="ct-hour-list"><li data-slot="0"><strong>Monday ~ Friday</strong>: 6:00 PM - 10:00 PM EST<span class="ct-local" hidden></span></li><li data-slot="1"><strong>Wednesday, also</strong>: 10:00 AM - 3:00 PM EST<span class="ct-local" hidden></span></li><li data-slot="2"><strong>Friday, also</strong>: 10:00 AM - 12:00 PM EST<span class="ct-local" hidden></span></li><li data-slot="3"><strong>Sunday</strong>: 12:00 PM - 6:00 PM EST<span class="ct-local" hidden></span></li></ul><h3 class="ct-h">Time Zone</h3><p class="ct-tz">Eastern Standard Time (EST&#x2F;EDT)</p><p class="ct-tz"><em>Please consider time zone differences when reaching out from international locations</em></p></div></div></section><section class="ct-panel ct-seek" aria-labelledby="ct-h-seek"><div class="inst-bar"><span class="inst-led" aria-hidden="true"></span><h2 class="ct-bar-t" id="ct-h-seek">What I&#39;m Looking For</h2></div><div class="ct-seek-body"><div><h3 class="ct-h">Open to Opportunities In:</h3><ul class="ct-opens"><li><span class="ct-open-led" aria-hidden="true"></span><span><strong>Summer - Fall 2027 Internships</strong> in hardware design and embedded systems</span></li><li><span class="ct-open-led" aria-hidden="true"></span><span><strong>Research Collaborations</strong> in analog circuitry / FPGA development</span></li><li><span class="ct-open-led" aria-hidden="true"></span><span><strong>Open Source Projects</strong> any hardware within my scope</span></li></ul></div><div><h3 class="ct-h">Areas of Interest:</h3><ul class="ct-chips"><li>Analog circuitry, amplifier designs</li><li>Software-defined radio (SDR)</li><li>Aerospace avionics systems</li><li>High-speed data acquisition</li><li>Audio engineering and DSP</li><li>Underwater robotics</li></ul></div></div></section><p class="ct-live" data-ct-live role="status" aria-live="polite"></p></div>
+</div></div></main><footer id="footer" class="pl pl-footer"><div class="ft"><div class="ft-cta"><p class="eyebrow">Get in touch</p><a class="ft-big" href="#ct-compose">Let&#39;s build something <span aria-hidden="true">&rarr;</span></a></div><nav class="ft-cols" aria-label="Footer"><div class="ft-col"><p class="ft-col-title">Work</p><a href="&#x2F;categories&#x2F;Technical-Projects&#x2F;">Projects</a><a href="&#x2F;categories&#x2F;Tech-Notes&#x2F;">Tech notes</a><a href="&#x2F;categories&#x2F;Stories-Writing&#x2F;">Stories &amp; writing</a><a href="&#x2F;archives&#x2F;">Archives</a><a href="&#x2F;tags&#x2F;">Tags</a></div><div class="ft-col"><p class="ft-col-title">Me</p><a href="&#x2F;about&#x2F;">About</a><a href="&#x2F;skills&#x2F;">Skills</a><a href="&#x2F;resume&#x2F;">Résumé</a><a href="&#x2F;contact&#x2F;">Contact</a></div><div class="ft-col"><p class="ft-col-title">Elsewhere</p><a href="https:&#x2F;&#x2F;github.com&#x2F;FrostFlops" target="_blank" rel="noopener">GitHub</a><a href="https:&#x2F;&#x2F;linkedin.com&#x2F;in&#x2F;peijie-liu-gatech" target="_blank" rel="noopener">LinkedIn</a><a href="https:&#x2F;&#x2F;space.bilibili.com&#x2F;490557212" target="_blank" rel="noopener">Bilibili</a><a href="mailto:pliu369@gatech.edu">Email</a></div></nav><div class="ft-base"><span>&copy; 2025&ndash;2026 Peijie Liu</span><span>Built with <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> and <a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener">Butterfly</a></span><span><a href="https://icp.gov.moe/?keyword=20262620" target="_blank" rel="noopener">萌ICP备20262620号</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.7.2"></script><script src="/js/main.js?v=5.7.2"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.15/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  const parseViewBox = viewBox => {
+    if (!viewBox) return null
+    const parts = viewBox.trim().split(/[\s,]+/).map(n => Number(n))
+    if (parts.length !== 4 || parts.some(n => Number.isNaN(n))) return null
+    return parts
+  }
+
+  const getSvgViewBox = svg => {
+    const attr = parseViewBox(svg.getAttribute('viewBox'))
+    if (attr) return attr
+
+    // Fallback: use bbox to build a viewBox
+    try {
+      const bbox = svg.getBBox()
+      if (bbox && bbox.width && bbox.height) return [bbox.x, bbox.y, bbox.width, bbox.height]
+    } catch (e) {
+      // getBBox may fail on some edge cases; ignore
+    }
+
+    const w = Number(svg.getAttribute('width')) || 0
+    const h = Number(svg.getAttribute('height')) || 0
+    if (w > 0 && h > 0) return [0, 0, w, h]
+    return [0, 0, 100, 100]
+  }
+
+  const setSvgViewBox = (svg, vb) => {
+    svg.setAttribute('viewBox', `${vb[0]} ${vb[1]} ${vb[2]} ${vb[3]}`)
+  }
+
+  const clamp = (v, min, max) => Math.max(min, Math.min(max, v))
+
+  const openSvgInNewTab = ({ source, initViewBox }) => {
+    const getClonedSvg = () => {
+      if (typeof source === 'string') {
+        const template = document.createElement('template')
+        template.innerHTML = source.trim()
+        const svg = template.content.querySelector('svg')
+        return svg ? svg.cloneNode(true) : null
+      }
+      if (source && typeof source.cloneNode === 'function') {
+        return source.cloneNode(true)
+      }
+      return null
+    }
+
+    const clone = getClonedSvg()
+    if (!clone) return
+    if (initViewBox && initViewBox.length === 4) {
+      clone.setAttribute('viewBox', initViewBox.join(' '))
+    }
+    if (!clone.getAttribute('xmlns')) clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg')
+    if (!clone.getAttribute('xmlns:xlink') && clone.innerHTML.includes('xlink:')) {
+      clone.setAttribute('xmlns:xlink', 'http://www.w3.org/1999/xlink')
+    }
+    // inject background to match current theme
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark'
+    const bg = getComputedStyle(document.body).backgroundColor || (isDark ? '#1e1e1e' : '#ffffff')
+    if (!clone.style.background) clone.style.background = bg
+
+    const serializer = new XMLSerializer()
+    const svgSource = serializer.serializeToString(clone)
+    const htmlSource = `<!doctype html><html><head><meta charset="utf-8" />
+      <style>
+        html, body { width: 100%; height: 100%; margin: 0; display: flex; align-items: center; justify-content: center; background: ${bg}; }
+        svg { max-width: 100%; max-height: 100%; height: auto; width: auto; }
+      </style>
+      </head><body>${svgSource}</body></html>`
+    const blob = new Blob([htmlSource], { type: 'text/html;charset=utf-8' })
+    const url = URL.createObjectURL(blob)
+    window.open(url, '_blank', 'noopener')
+
+    setTimeout(() => URL.revokeObjectURL(url), 5000)
+  }
+
+  const attachMermaidViewerButton = wrap => {
+    let btn = wrap.querySelector('.mermaid-open-btn')
+    if (!btn) {
+      btn = document.createElement('button')
+      btn.type = 'button'
+      btn.className = 'mermaid-open-btn'
+      wrap.appendChild(btn)
+    }
+
+    btn.innerHTML = '<i class="fa fa-search fa-fw" aria-hidden="true"></i>'
+
+    if (!btn.__mermaidViewerBound) {
+      btn.addEventListener('click', e => {
+        e.preventDefault()
+        e.stopPropagation()
+        const svg = wrap.__mermaidOriginalSvg || wrap.querySelector('svg')
+        if (!svg) return
+        const initViewBox = wrap.__mermaidInitViewBox
+        openSvgInNewTab({ source: svg, initViewBox })
+      })
+      btn.__mermaidViewerBound = true
+    }
+  }
+
+  // Zoom around a point (px, py) in the SVG viewport (in viewBox coordinates)
+  const zoomAtPoint = (vb, factor, px, py) => {
+    const w = vb[2] * factor
+    const h = vb[3] * factor
+    const nx = px - (px - vb[0]) * factor
+    const ny = py - (py - vb[1]) * factor
+    return [nx, ny, w, h]
+  }
+
+  const initMermaidGestures = wrap => {
+    // Clean up previous event listeners and pending frames
+    if (wrap.__mermaidAbortController) {
+      wrap.__mermaidAbortController.abort()
+      if (wrap.__mermaidRafId) cancelAnimationFrame(wrap.__mermaidRafId)
+    }
+    const ac = new AbortController()
+    wrap.__mermaidAbortController = ac
+    const svg = wrap.querySelector('svg')
+    if (!svg) return
+
+    // Ensure viewBox exists so gestures always work
+    const initVb = getSvgViewBox(svg)
+    wrap.__mermaidInitViewBox = initVb
+    wrap.__mermaidCurViewBox = initVb.slice()
+    setSvgViewBox(svg, initVb)
+    // Disable default gestures to prevent scroll chaining and pinch-zoom penetration in Chrome
+    svg.style.touchAction = 'none'
+
+    // Cache BoundingClientRect, throttled on scroll to reduce reflow
+    let cachedRect = svg.getBoundingClientRect()
+    let rectDirty = false
+    const markRectDirty = () => { rectDirty = true }
+    window.addEventListener('resize', markRectDirty, { signal: ac.signal })
+    window.addEventListener('scroll', markRectDirty, { signal: ac.signal, capture: true })
+    const getRect = () => {
+      if (rectDirty) {
+        cachedRect = svg.getBoundingClientRect()
+        rectDirty = false
+      }
+      return cachedRect
+    }
+
+    // Precompute clamp bounds from initial viewBox
+    const minW = initVb[2] * 0.1
+    const maxW = initVb[2] * 10
+    const minH = initVb[3] * 0.1
+    const maxH = initVb[3] * 10
+    const clampVb = vb => {
+      const out = vb.slice()
+      out[2] = clamp(out[2], minW, maxW)
+      out[3] = clamp(out[3], minH, maxH)
+      return out
+    }
+
+    // Throttle DOM updates using requestAnimationFrame
+    let pendingVb = null
+    let rafId = null
+    const applyVb = () => {
+      if (pendingVb) {
+        wrap.__mermaidCurViewBox = pendingVb
+        setSvgViewBox(svg, pendingVb)
+        pendingVb = null
+      }
+      rafId = null
+      wrap.__mermaidRafId = null
+    }
+    const setCurVb = vb => {
+      pendingVb = clampVb(vb)
+      if (!rafId) {
+        rafId = requestAnimationFrame(applyVb)
+        wrap.__mermaidRafId = rafId
+      }
+    }
+
+    const state = {
+      pointers: new Map(),
+      startVb: null,
+      startDist: 0,
+      lastPointerX: 0,
+      lastPointerY: 0
+    }
+
+    const onPointerDown = e => {
+      if (e.pointerType === 'mouse' && e.button !== 0) return
+      svg.setPointerCapture(e.pointerId)
+      const curVb = wrap.__mermaidCurViewBox
+      state.pointers.set(e.pointerId, { x: e.clientX, y: e.clientY })
+      if (state.pointers.size === 1) {
+        state.startVb = curVb.slice()
+        state.lastPointerX = e.clientX
+        state.lastPointerY = e.clientY
+      } else if (state.pointers.size === 2) {
+        const pts = [...state.pointers.values()]
+        const dx = pts[0].x - pts[1].x
+        const dy = pts[0].y - pts[1].y
+        state.startDist = Math.hypot(dx, dy)
+        state.startVb = curVb.slice()
+      }
+    }
+
+    const onPointerMove = e => {
+      if (!state.pointers.has(e.pointerId)) return
+      state.pointers.set(e.pointerId, { x: e.clientX, y: e.clientY })
+      const curVb = wrap.__mermaidCurViewBox
+      const rect = getRect()
+      if (state.pointers.size === 1 && state.startVb) {
+        const p = state.pointers.values().next().value
+        const dxClient = p.x - state.lastPointerX
+        const dyClient = p.y - state.lastPointerY
+        state.lastPointerX = p.x
+        state.lastPointerY = p.y
+        const dx = dxClient * (curVb[2] / rect.width)
+        const dy = dyClient * (curVb[3] / rect.height)
+        setCurVb([curVb[0] - dx, curVb[1] - dy, curVb[2], curVb[3]])
+        return
+      }
+      if (state.pointers.size === 2 && state.startVb && state.startDist > 0) {
+        const pts = [...state.pointers.values()]
+        const dx = pts[0].x - pts[1].x
+        const dy = pts[0].y - pts[1].y
+        const dist = Math.hypot(dx, dy)
+        if (!dist) return
+        const factor = state.startDist / dist
+        const cx = (pts[0].x + pts[1].x) / 2
+        const cy = (pts[0].y + pts[1].y) / 2
+        const px = curVb[0] + (cx - rect.left) * (curVb[2] / rect.width)
+        const py = curVb[1] + (cy - rect.top) * (curVb[3] / rect.height)
+        setCurVb(zoomAtPoint(state.startVb, factor, px, py))
+      }
+    }
+
+    const onPointerUpOrCancel = e => {
+      // Release PointerCapture to avoid event capture anomalies
+      if (svg.hasPointerCapture && svg.hasPointerCapture(e.pointerId)) {
+        svg.releasePointerCapture(e.pointerId)
+      }
+      state.pointers.delete(e.pointerId)
+      if (state.pointers.size === 0) {
+        state.startVb = null
+        state.startDist = 0
+      } else if (state.pointers.size === 1) {
+        const p = state.pointers.values().next().value
+        state.lastPointerX = p.x
+        state.lastPointerY = p.y
+      }
+    }
+
+    const onWheel = e => {
+      // Prevent event bubbling from triggering external scroll
+      e.preventDefault()
+      e.stopPropagation()
+      // Normalize deltaY across deltaMode (Chrome uses pixels, Safari uses lines)
+      let delta = e.deltaY
+      if (e.deltaMode === 1) delta *= 16
+      else if (e.deltaMode === 2) delta *= 400
+
+      // Continuous zoom factor: smoother than fixed 1.1/0.9 steps
+      const zoomFactor = Math.pow(1.001, delta)
+
+      const curVb = wrap.__mermaidCurViewBox
+      const rect = getRect()
+      const px = curVb[0] + (e.clientX - rect.left) * (curVb[2] / rect.width)
+      const py = curVb[1] + (e.clientY - rect.top) * (curVb[3] / rect.height)
+      setCurVb(zoomAtPoint(curVb, zoomFactor, px, py))
+    }
+
+    const onDblClick = () => {
+      const init = wrap.__mermaidInitViewBox
+      if (init) setCurVb(init)
+    }
+
+    svg.addEventListener('pointerdown', onPointerDown, { signal: ac.signal })
+    svg.addEventListener('pointermove', onPointerMove, { signal: ac.signal })
+    svg.addEventListener('pointerup', onPointerUpOrCancel, { signal: ac.signal })
+    svg.addEventListener('pointercancel', onPointerUpOrCancel, { signal: ac.signal })
+    svg.addEventListener('wheel', onWheel, { passive: false, signal: ac.signal })
+    svg.addEventListener('dblclick', onDblClick, { signal: ac.signal })
+  }
+
+  const runMermaid = ele => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+    ele.forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      // Clean up event listeners and stale content before re-rendering
+      if (item.__mermaidAbortController) {
+        item.__mermaidAbortController.abort()
+      }
+      const oldSvg = item.querySelector('svg')
+      if (oldSvg) oldSvg.remove()
+      const oldError = item.querySelector('.mermaid-error')
+      if (oldError) oldError.remove()
+      let config = {}
+      try {
+        config = mermaidSrc.dataset.config ? JSON.parse(mermaidSrc.dataset.config) : {}
+      } catch (e) {
+        console.warn('[mermaid] failed to parse dataset.config:', e)
+      }
+      if (!config.theme) {
+        config.theme = theme
+      }
+      const mermaidThemeConfig = `%%{init: ${JSON.stringify(config)}}%%\n`
+      const mermaidID = `mermaid-${index}`
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderMermaid = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+        if (true) initMermaidGestures(item)
+        item.__mermaidOriginalSvg = svg
+        if (true) attachMermaidViewerButton(item)
+      }
+
+      const handleError = err => {
+        console.error(`[mermaid] render failed for block #${index}:`, err)
+        const errorEl = document.createElement('div')
+        errorEl.className = 'mermaid-error'
+        errorEl.textContent = `Mermaid render error: ${err.message || err}`
+        mermaidSrc.insertAdjacentElement('afterend', errorEl)
+      }
+
+      try {
+        const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+        // mermaid v9 and v10 compatibility
+        if (typeof renderFn === 'string') {
+          renderMermaid(renderFn)
+        } else {
+          renderFn.then(({ svg }) => renderMermaid(svg)).catch(handleError)
+        }
+      } catch (err) {
+        handleError(err)
+      }
+    })
+  }
+
+  const codeToMermaid = $article => {
+    const codeMermaidEle = $article.querySelectorAll('pre > code.mermaid')
+    if (codeMermaidEle.length === 0) return
+
+    codeMermaidEle.forEach(ele => {
+      const preEle = document.createElement('pre')
+      preEle.className = 'mermaid-src'
+      preEle.hidden = true
+      preEle.textContent = ele.textContent
+      const newEle = document.createElement('div')
+      newEle.className = 'mermaid-wrap'
+      newEle.appendChild(preEle)
+      ele.parentNode.replaceWith(newEle)
+    })
+  }
+
+  const loadMermaid = () => {
+    const $article = document.getElementById('article-container')
+    if (!$article) return
+
+    if (true) codeToMermaid($article)
+    const $mermaid = $article.querySelectorAll('.mermaid-wrap')
+    if ($mermaid.length === 0) return
+
+    const runMermaidFn = () => runMermaid($mermaid)
+    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
+    window.loadMermaid ? runMermaidFn() : btf.getScript('https://cdn.jsdelivr.net/npm/mermaid@12.3.0/dist/mermaid.min.js').then(runMermaidFn)
+  }
+
+  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script></div><script src="https://cdn.jsdelivr.net/npm/wavesurfer.js@7.8.6/dist/wavesurfer.min.js"></script><script src="/js/particles.js" defer></script><script src="/js/signal.js" defer></script><script src="/js/custom-effects.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/click-show-text.min.js" data-mobile="false" data-text="Innovation,Precision,Analog,FPGA,Rocket,Circuits,PCB,Explore,Power,Diving,Audiophile,Metrology" data-fontsize="14px" data-random="true" async="async"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js" defer="defer"></script><script>document.addEventListener('DOMContentLoaded', () => {
+  const pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","meta[property=\"og:description\"]","link[rel=\"canonical\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"]):not([data-fancybox])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => {
+      try {
+        fn()
+      } catch (err) {
+        console.debug('Pjax callback failed:', err)
+      }
+    })
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      if (!item.parentNode) return
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || ''
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    const responseURL = e.request && e.request.responseURL
+    if (e.request && e.request.status === 404) {
+      true
+        ? pjax.loadUrl('/404.html')
+        : responseURL && (window.location.href = responseURL)
+    } else if (responseURL) {
+      window.location.href = responseURL
+    }
+  })
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading Database</span></div><div class="local-search-input"><input placeholder="Search projects, notes, essays..." type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.7.2"></script></div></div></body></html>
